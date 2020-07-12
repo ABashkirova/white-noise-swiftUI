@@ -18,6 +18,7 @@ struct CategoryCardView: View {
     var placeholder: some View {
         PlaceholderCategoryCardView()
     }
+
     var body: some View {
         if
             let title = viewModel.title,
@@ -32,7 +33,6 @@ struct CategoryCardView: View {
                     number: number,
                     desctiption: description)
             )
-            
         } else {
             return AnyView(placeholder)
         }

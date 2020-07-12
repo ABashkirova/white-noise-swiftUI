@@ -32,5 +32,3 @@ extension CategoryMenuFactory: CategoryMenuItemViewModelFactory {
 protocol CategoryMenuItemViewModelFactory {
     func createCategoryMenuItemViewModels(categories: [CategoryData]) -> [CategoryMenuItemViewModel]
 }
-
-
