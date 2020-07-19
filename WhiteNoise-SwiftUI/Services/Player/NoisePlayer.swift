@@ -25,7 +25,7 @@ class NoisePlayer {
         player?.play()
     }
     
-    func pause() {
+    func stop() {
         player?.pause()
     }
     
