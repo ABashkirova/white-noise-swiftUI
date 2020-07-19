@@ -16,7 +16,7 @@ class MainScreenViewModel: ObservableObject {
     var cardViewModel: CategoryCardViewModel
     var musicTracksTableViewModel: MusicTracksTableViewModel
     var mainScreenViewsFactory: MainScreenViewsFactory
-    
+
     init(
         categoryRepository: CategoryRepository,
         player: NoisePlayer,
@@ -63,12 +63,22 @@ extension MainScreenViewModel: PlayerDelegate {
 extension MainScreenViewModel: CategoryMenuDelegate {
     func didSelect(category: CategoryData) {
         cardViewModel.update(category: category)
-        musicTracksTableViewModel.updateMusicList(category: category)
+        musicTracksTableViewModel.updateMusicList(
+                category: category,
+                currentAudio: player.currentAudio,
+                isPlaying: player.isPlaying)
     }
 }
 
 extension MainScreenViewModel: MusicListDelegate {
     func didSelect(audioTrack: AudioData, isPlayed: Bool) {
         playerViewModel.isPlayed = isPlayed
+        
+        if (isPlayed) {
+            player.setAudio(audioTrack)
+            player.play()
+        } else {
+            player.stop()
+        }
     }
 }
