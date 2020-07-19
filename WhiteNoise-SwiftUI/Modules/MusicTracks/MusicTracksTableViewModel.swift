@@ -30,9 +30,18 @@ class MusicTracksTableViewModel: ObservableObject {
             trackViewModels = musicTrackViewModelFactory.createEmptyMusicList()
         }
     }
-    
-    func updateMusicList(category: CategoryData) {
+
+    func updateMusicList(
+        category: CategoryData,
+        currentAudio: AudioData?,
+        isPlaying: Bool
+    ) {
         trackViewModels = musicTrackViewModelFactory.createMusicTrackViewModels(audioList: category.audioList, delegate: self)
+        guard let currentAudio = currentAudio else { return }
+
+        if isPlaying {
+            playTrack(currentAudio)
+        }
     }
 
     func setIsPlayingForFirstTrack() -> AudioData? {
@@ -56,13 +65,15 @@ class MusicTracksTableViewModel: ObservableObject {
             $0.isPlayed.toggle()
         }
     }
-    
-    func playTrack() {
+
+    func playTrack(_ audioTrack: AudioData) {
         guard let trackViewModels = trackViewModels else { return }
 
-        trackViewModels.first?.isPlayed = true
-        
+        trackViewModels.filter {
+            $0.audio == audioTrack
+        }.first?.isPlayed = true
     }
+
 }
 
 extension MusicTracksTableViewModel: MusicTrackDelegate {
