@@ -34,7 +34,19 @@ class MusicTracksTableViewModel: ObservableObject {
     func updateMusicList(category: CategoryData) {
         trackViewModels = musicTrackViewModelFactory.createMusicTrackViewModels(audioList: category.audioList, delegate: self)
     }
-    
+
+    func setIsPlayingForFirstTrack() -> AudioData? {
+        guard
+                let firstTrackVM = trackViewModels?.first,
+                let firstAudio = firstTrackVM.audio
+                else {
+            return nil
+        }
+
+        firstTrackVM.isPlayed = true
+        return firstAudio
+    }
+
     func stopTrack() {
         guard let trackViewModels = trackViewModels else { return }
 
