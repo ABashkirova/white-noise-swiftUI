@@ -30,7 +30,7 @@ class MainScreenViewModel: ObservableObject {
         menuViewModel = CategoryMenuViewModel(
             categories: categories,
             categoryMenuItemViewModelFactory: categoryMenuItemViewModelFactory)
-        playerViewModel = PlayerViewModel()
+        playerViewModel = PlayerViewModel(volume: Double(player.currentVolume))
         cardViewModel = CategoryCardViewModel(category: firstCategory)
         musicTracksTableViewModel = MusicTracksTableViewModel(
             category: firstCategory,
@@ -51,6 +51,10 @@ class MainScreenViewModel: ObservableObject {
 }
 
 extension MainScreenViewModel: PlayerDelegate {
+    func setVolume(_ volume: Double) {
+        player.setVolume(volume)
+    }
+    
     func stop() {
         musicTracksTableViewModel.stopTrack()
         player.stop()
