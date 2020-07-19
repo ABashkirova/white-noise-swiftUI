@@ -15,7 +15,7 @@ struct MainScreenView: View {
         self.viewModel = viewModel
         UITableView.appearance().separatorStyle = .none
     }
-    
+
     var body: some View {
         let factory = viewModel.mainScreenViewsFactory
         return HStack {
@@ -60,7 +60,6 @@ struct MainScreenView_Previews: PreviewProvider {
                 )
             )
         }
-        
     }
 }
 #endif

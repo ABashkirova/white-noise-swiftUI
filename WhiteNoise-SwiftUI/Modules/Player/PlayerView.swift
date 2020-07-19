@@ -11,12 +11,12 @@ import SwiftUI
 struct PlayerView: View {
     @ObservedObject var viewModel: PlayerViewModel
     private var volume: Double
-    
+
     init(viewModel: PlayerViewModel) {
         self.viewModel = viewModel
         self.volume = viewModel.volume
     }
-    
+
     var volumeSlider: some View {
         Slider(
             value: Binding(get: {
@@ -40,11 +40,11 @@ struct PlayerView: View {
         }
         .foregroundColor(.clear)
     }
-    
+
     func playTapped() {
         viewModel.playChange()
     }
-    
+
     func volumeChanged() {
         viewModel.volumeChanged()
     }

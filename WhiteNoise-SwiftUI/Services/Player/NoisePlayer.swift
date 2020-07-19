@@ -38,11 +38,11 @@ extension NoisePlayer {
         currentAudio = audio
         player = makePlayer(audioTrack: audio)
     }
-    
+
     func play() {
         player?.play()
     }
-    
+
     func stop() {
         player?.pause()
     }

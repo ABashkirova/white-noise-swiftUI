@@ -18,17 +18,17 @@ class PlayerViewModel: ObservableObject {
     weak var delegate: PlayerDelegate?
     @Published var isPlayed: Bool
     @Published var volume: Double
-    
+
     init(volume: Double, isPlayed: Bool = false) {
         self.volume = volume
         self.isPlayed = isPlayed
     }
-    
+
     func playChange() {
         isPlayed.toggle()
         isPlayed ? delegate?.play() : delegate?.stop()
     }
-    
+
     func volumeChanged() {
         delegate?.setVolume(volume)
     }

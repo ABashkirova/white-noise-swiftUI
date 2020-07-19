@@ -26,7 +26,7 @@ class MainScreenViewModel: ObservableObject {
         self.player = player
         let categories = categoryRepository.getCategories()
         let firstCategory = categories.first
-        
+
         menuViewModel = CategoryMenuViewModel(
             categories: categories,
             categoryMenuItemViewModelFactory: categoryMenuItemViewModelFactory)
@@ -36,14 +36,14 @@ class MainScreenViewModel: ObservableObject {
             category: firstCategory,
             musicTrackViewModelFactory: musicTrackViewModelFactory)
         menuViewModel.setActiveCategory(category: firstCategory)
-        
+
         self.mainScreenViewsFactory = MainScreenViewsFactory(
             menuViewModel: menuViewModel,
             playerViewModel: playerViewModel,
             musicTrackTableViewModel: musicTracksTableViewModel,
             categoryCardViewModel: cardViewModel
         )
-        
+
         menuViewModel.delegate = self
         musicTracksTableViewModel.delegate = self
         playerViewModel.delegate = self
@@ -54,12 +54,12 @@ extension MainScreenViewModel: PlayerDelegate {
     func setVolume(_ volume: Double) {
         player.setVolume(volume)
     }
-    
+
     func stop() {
         musicTracksTableViewModel.stopTrack()
         player.stop()
     }
-    
+
     func play() {
         if let currentAudio = player.currentAudio {
             musicTracksTableViewModel.playTrack(currentAudio)
@@ -67,8 +67,10 @@ extension MainScreenViewModel: PlayerDelegate {
             // Установим в плеер первую мелодию открытой категории
             guard
                 let audio = musicTracksTableViewModel.setIsPlayingForFirstTrack()
-            else { return }
-            
+            else {
+                return
+            }
+
             player.setAudio(audio)
         }
         player.play()
@@ -79,16 +81,16 @@ extension MainScreenViewModel: CategoryMenuDelegate {
     func didSelect(category: CategoryData) {
         cardViewModel.update(category: category)
         musicTracksTableViewModel.updateMusicList(
-                category: category,
-                currentAudio: player.currentAudio,
-                isPlaying: player.isPlaying)
+            category: category,
+            currentAudio: player.currentAudio,
+            isPlaying: player.isPlaying)
     }
 }
 
 extension MainScreenViewModel: MusicListDelegate {
     func didSelect(audioTrack: AudioData, isPlayed: Bool) {
         playerViewModel.isPlayed = isPlayed
-        
+
         if (isPlayed) {
             player.setAudio(audioTrack)
             player.play()
