@@ -39,23 +39,23 @@ let categories: [CategoryData] = [
     audioList: [
         AudioData(
                 name: "Silence of Stones",
-                audioLength: 72,
+                audioLength: 56,
                 audioImage: "natural_01"),
         AudioData(
-                name: "Shine like Aurora",
-                audioLength: 104,
+                name: "Wind Blowing",
+                audioLength: 59,
                 audioImage: "natural_02"),
         AudioData(
                 name: "Lonely Mother of all",
-                audioLength: 72,
+                audioLength: 95,
                 audioImage: "natural_03"),
         AudioData(
-                name: "Chill the Mood",
-                audioLength: 104,
+                name: "Windy Beach",
+                audioLength: 59,
                 audioImage: "natural_04"),
         AudioData(
-                name: "Cave calling",
-                audioLength: 104,
+                name: "Tree Frog Sound",
+                audioLength: 62,
                 audioImage: "natural_05")
     ]),
     CategoryData(
@@ -65,16 +65,16 @@ let categories: [CategoryData] = [
             info: "A collection of white noise from nature, containing some audio files.",
             audioList: [
                 AudioData(
-                        name: "Ripples my Heart",
-                        audioLength: 72,
+                        name: "Rainy Mood",
+                        audioLength: 63,
                         audioImage: "rain_01"),
                 AudioData(
-                        name: "The cry of Insects",
-                        audioLength: 104,
+                        name: "Relaxing Rain Noise",
+                        audioLength: 38,
                         audioImage: "rain_02"),
                 AudioData(
-                        name: "Tears of Joy",
-                        audioLength: 72,
+                        name: "Close Thunder with Rain",
+                        audioLength: 16,
                         audioImage: "rain_03")
             ]),
     CategoryData(
@@ -84,20 +84,20 @@ let categories: [CategoryData] = [
             info: "A collection of white noise from nature, containing four audio files.",
             audioList: [
                 AudioData(
-                        name: "Sound of Wind",
-                        audioLength: 72,
+                        name: "Spring Forest",
+                        audioLength: 44,
                         audioImage: "forest_01"),
                 AudioData(
-                        name: "The cry of Insects",
-                        audioLength: 104,
+                        name: "Forest Sounds",
+                        audioLength: 52,
                         audioImage: "forest_02"),
                 AudioData(
                         name: "Melody of Birds",
-                        audioLength: 72,
+                        audioLength: 76,
                         audioImage: "forest_03"),
                 AudioData(
-                        name: "Melody of Bear",
-                        audioLength: 72,
+                        name: "Soothing Nighttime Ambience",
+                        audioLength: 152,
                         audioImage: "forest_04")
             ]),
     CategoryData(
@@ -107,20 +107,20 @@ let categories: [CategoryData] = [
             info: "A collection of white noise from nature, containing some audio files.",
             audioList: [
                 AudioData(
-                        name: "Sound of Water",
-                        audioLength: 72,
+                        name: "Go with the Flow",
+                        audioLength: 48,
                         audioImage: "flow_01"),
                 AudioData(
-                        name: "Go with the Flow",
-                        audioLength: 104,
+                        name: "Walking in shallow water",
+                        audioLength: 14,
                         audioImage: "flow_02"),
                 AudioData(
-                        name: "Melting my Heart",
-                        audioLength: 72,
+                        name: "Mountain river",
+                        audioLength: 140,
                         audioImage: "flow_03"),
                 AudioData(
-                        name: "Sound of Pebbles",
-                        audioLength: 104,
+                        name: "Waves crashing",
+                        audioLength: 149,
                         audioImage: "flow_04")
             ]),
     CategoryData(
@@ -130,16 +130,20 @@ let categories: [CategoryData] = [
             info: "A collection of white noise from nature, containing some audio files.",
             audioList: [
                 AudioData(
-                        name: "Sound of Wind",
-                        audioLength: 72,
-                        audioImage: "other_01"),
+                    name: "Wind Blowing",
+                    audioLength: 59,
+                    audioImage: "other_01"),
                 AudioData(
-                        name: "The cry of Insects",
-                        audioLength: 104,
-                        audioImage: "other_02"),
+                    name: "Fire",
+                    audioLength: 26,
+                    audioImage: "other_02"),
                 AudioData(
-                        name: "Melody of Birds",
-                        audioLength: 72,
-                        audioImage: "other_03")
+                    name: "White noise",
+                    audioLength: 30,
+                    audioImage: "other_03"),
+                AudioData(
+                    name: "Tin Can Wind Chimes Sounds",
+                    audioLength: 361,
+                    audioImage: "other_04")
             ])
 ]
