@@ -24,7 +24,6 @@ extension MusicTracksFactory: MusicTrackViewModelFactory {
     ) -> [MusicTrackViewModel] {
         if !audioList.isEmpty {
             return audioList.map { audio in
-                print("Set music track \(audio.name)")
                 let viewModel = MusicTrackViewModel(audio)
                 viewModel.delegate = delegate
                 return viewModel
