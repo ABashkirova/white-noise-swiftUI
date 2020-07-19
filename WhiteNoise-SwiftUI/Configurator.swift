@@ -10,14 +10,16 @@ import SwiftUI
 
 class Configurator {
     private let categoryRepository: CategoryRepository
-    
+    private let player: NoisePlayer
     init() {
-       categoryRepository = CategoryRepositoryImpl()
+        categoryRepository = CategoryRepositoryImpl()
+        player = NoisePlayer()
     }
 
     func configure() -> UIViewController {
         let mainScreenViewModel = MainScreenViewModel(
             categoryRepository: categoryRepository,
+            player: player,
             categoryMenuItemViewModelFactory: CategoryMenuFactory(),
             musicTrackViewModelFactory: MusicTracksFactory()
         )

@@ -13,6 +13,26 @@
 		6107D7F524A8CB5400341809 /* MusicTrackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6107D7F424A8CB5400341809 /* MusicTrackTableView.swift */; };
 		6107D7F824A8EAE100341809 /* AudioData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6107D7F724A8EAE100341809 /* AudioData.swift */; };
 		6107D7FA24A8EC1500341809 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6107D7F924A8EC1500341809 /* CategoryData.swift */; };
+		6120CE8924C30CE500440884 /* White noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE8824C30CE500440884 /* White noise.mp3 */; };
+		6120CE8B24C3195300440884 /* Relaxing Rain Noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE8A24C3195300440884 /* Relaxing Rain Noise.mp3 */; };
+		6120CE8D24C319AA00440884 /* Rainy Mood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE8C24C319AA00440884 /* Rainy Mood.mp3 */; };
+		6120CE8F24C31A4000440884 /* Close Thunder with Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE8E24C31A4000440884 /* Close Thunder with Rain.mp3 */; };
+		6120CE9124C31C0200440884 /* Soothing Nighttime Ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9024C31C0200440884 /* Soothing Nighttime Ambience.mp3 */; };
+		6120CE9324C31C2200440884 /* Melody of Birds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9224C31C2200440884 /* Melody of Birds.mp3 */; };
+		6120CE9524C31C5100440884 /* Forest Sounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9424C31C5100440884 /* Forest Sounds.mp3 */; };
+		6120CE9724C31C7900440884 /* Spring Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9624C31C7900440884 /* Spring Forest.mp3 */; };
+		6120CE9924C31D5700440884 /* Go with the Flow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9824C31D5700440884 /* Go with the Flow.mp3 */; };
+		6120CE9B24C31DC500440884 /* Walking in shallow water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9A24C31DC500440884 /* Walking in shallow water.mp3 */; };
+		6120CE9D24C31DDA00440884 /* Waves crashing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9C24C31DDA00440884 /* Waves crashing.mp3 */; };
+		6120CE9F24C31DFD00440884 /* Mountain river.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CE9E24C31DFD00440884 /* Mountain river.mp3 */; };
+		6120CEA124C320AE00440884 /* Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CEA024C320AE00440884 /* Fire.mp3 */; };
+		6120CEA324C320DB00440884 /* Silence of Stones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CEA224C320DB00440884 /* Silence of Stones.mp3 */; };
+		6120CEA524C3210200440884 /* Lonely Mother of all.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CEA424C3210100440884 /* Lonely Mother of all.mp3 */; };
+		6120CEA724C3213100440884 /* Wind Blowing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CEA624C3213100440884 /* Wind Blowing.mp3 */; };
+		6120CEA924C3217E00440884 /* Tin Can Wind Chimes Sounds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CEA824C3217E00440884 /* Tin Can Wind Chimes Sounds.mp3 */; };
+		6120CEAB24C322DB00440884 /* Windy Beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CEAA24C322DB00440884 /* Windy Beach.mp3 */; };
+		6120CEAD24C3266700440884 /* Tree Frog Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6120CEAC24C3266700440884 /* Tree Frog Sound.mp3 */; };
+		6120CEB324C32D7400440884 /* NoisePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6120CEB224C32D7400440884 /* NoisePlayer.swift */; };
 		6177621124B99939002BA26B /* PlaceholderTextMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177621024B99939002BA26B /* PlaceholderTextMenuItem.swift */; };
 		6177621324B99A46002BA26B /* Color+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177621224B99A46002BA26B /* Color+app.swift */; };
 		6177621524B99C52002BA26B /* PlaceholderMusicTrackTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6177621424B99C52002BA26B /* PlaceholderMusicTrackTableCellView.swift */; };
@@ -49,6 +69,26 @@
 		6107D7F424A8CB5400341809 /* MusicTrackTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrackTableView.swift; sourceTree = "<group>"; };
 		6107D7F724A8EAE100341809 /* AudioData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioData.swift; sourceTree = "<group>"; };
 		6107D7F924A8EC1500341809 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		6120CE8824C30CE500440884 /* White noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "White noise.mp3"; sourceTree = "<group>"; };
+		6120CE8A24C3195300440884 /* Relaxing Rain Noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Relaxing Rain Noise.mp3"; sourceTree = "<group>"; };
+		6120CE8C24C319AA00440884 /* Rainy Mood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rainy Mood.mp3"; sourceTree = "<group>"; };
+		6120CE8E24C31A4000440884 /* Close Thunder with Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Close Thunder with Rain.mp3"; sourceTree = "<group>"; };
+		6120CE9024C31C0200440884 /* Soothing Nighttime Ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Soothing Nighttime Ambience.mp3"; sourceTree = "<group>"; };
+		6120CE9224C31C2200440884 /* Melody of Birds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Melody of Birds.mp3"; sourceTree = "<group>"; };
+		6120CE9424C31C5100440884 /* Forest Sounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Forest Sounds.mp3"; sourceTree = "<group>"; };
+		6120CE9624C31C7900440884 /* Spring Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Spring Forest.mp3"; sourceTree = "<group>"; };
+		6120CE9824C31D5700440884 /* Go with the Flow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Go with the Flow.mp3"; sourceTree = "<group>"; };
+		6120CE9A24C31DC500440884 /* Walking in shallow water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Walking in shallow water.mp3"; sourceTree = "<group>"; };
+		6120CE9C24C31DDA00440884 /* Waves crashing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Waves crashing.mp3"; sourceTree = "<group>"; };
+		6120CE9E24C31DFD00440884 /* Mountain river.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mountain river.mp3"; sourceTree = "<group>"; };
+		6120CEA024C320AE00440884 /* Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fire.mp3; sourceTree = "<group>"; };
+		6120CEA224C320DB00440884 /* Silence of Stones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Silence of Stones.mp3"; sourceTree = "<group>"; };
+		6120CEA424C3210100440884 /* Lonely Mother of all.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lonely Mother of all.mp3"; sourceTree = "<group>"; };
+		6120CEA624C3213100440884 /* Wind Blowing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Wind Blowing.mp3"; sourceTree = "<group>"; };
+		6120CEA824C3217E00440884 /* Tin Can Wind Chimes Sounds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tin Can Wind Chimes Sounds.mp3"; sourceTree = "<group>"; };
+		6120CEAA24C322DB00440884 /* Windy Beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Windy Beach.mp3"; sourceTree = "<group>"; };
+		6120CEAC24C3266700440884 /* Tree Frog Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tree Frog Sound.mp3"; sourceTree = "<group>"; };
+		6120CEB224C32D7400440884 /* NoisePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoisePlayer.swift; sourceTree = "<group>"; };
 		6177621024B99939002BA26B /* PlaceholderTextMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextMenuItem.swift; sourceTree = "<group>"; };
 		6177621224B99A46002BA26B /* Color+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+app.swift"; sourceTree = "<group>"; };
 		6177621424B99C52002BA26B /* PlaceholderMusicTrackTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderMusicTrackTableCellView.swift; sourceTree = "<group>"; };
@@ -98,6 +138,49 @@
 				6107D7F924A8EC1500341809 /* CategoryData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6120CE8724C30C7600440884 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				6120CEAC24C3266700440884 /* Tree Frog Sound.mp3 */,
+				6120CE8A24C3195300440884 /* Relaxing Rain Noise.mp3 */,
+				6120CEA224C320DB00440884 /* Silence of Stones.mp3 */,
+				6120CE9624C31C7900440884 /* Spring Forest.mp3 */,
+				6120CE9024C31C0200440884 /* Soothing Nighttime Ambience.mp3 */,
+				6120CEAA24C322DB00440884 /* Windy Beach.mp3 */,
+				6120CE9A24C31DC500440884 /* Walking in shallow water.mp3 */,
+				6120CE8E24C31A4000440884 /* Close Thunder with Rain.mp3 */,
+				6120CE9224C31C2200440884 /* Melody of Birds.mp3 */,
+				6120CEA024C320AE00440884 /* Fire.mp3 */,
+				6120CE9824C31D5700440884 /* Go with the Flow.mp3 */,
+				6120CEA624C3213100440884 /* Wind Blowing.mp3 */,
+				6120CEA424C3210100440884 /* Lonely Mother of all.mp3 */,
+				6120CE9424C31C5100440884 /* Forest Sounds.mp3 */,
+				6120CE9E24C31DFD00440884 /* Mountain river.mp3 */,
+				6120CEA824C3217E00440884 /* Tin Can Wind Chimes Sounds.mp3 */,
+				6120CE8C24C319AA00440884 /* Rainy Mood.mp3 */,
+				6120CE9C24C31DDA00440884 /* Waves crashing.mp3 */,
+				6120CE8824C30CE500440884 /* White noise.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		6120CEB024C32D4B00440884 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				61DBABF024B19484001ECA7F /* CategoryRepository.swift */,
+				61DBABF224B1B722001ECA7F /* CategoryRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6120CEB124C32D5C00440884 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				6120CEB224C32D7400440884 /* NoisePlayer.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		617761FA24B9769E002BA26B /* Menu */ = {
@@ -164,6 +247,7 @@
 		617DC40824A855EC00F40A08 = {
 			isa = PBXGroup;
 			children = (
+				6120CE8724C30C7600440884 /* Audio */,
 				617DC41324A855EC00F40A08 /* WhiteNoise-SwiftUI */,
 				617DC41224A855EC00F40A08 /* Products */,
 			);
@@ -220,8 +304,8 @@
 		61DBABEF24B19473001ECA7F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				61DBABF024B19484001ECA7F /* CategoryRepository.swift */,
-				61DBABF224B1B722001ECA7F /* CategoryRepositoryImpl.swift */,
+				6120CEB124C32D5C00440884 /* Player */,
+				6120CEB024C32D4B00440884 /* Repositories */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,9 +378,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6120CEA924C3217E00440884 /* Tin Can Wind Chimes Sounds.mp3 in Resources */,
 				617DC42124A855EF00F40A08 /* LaunchScreen.storyboard in Resources */,
+				6120CE9924C31D5700440884 /* Go with the Flow.mp3 in Resources */,
+				6120CE9B24C31DC500440884 /* Walking in shallow water.mp3 in Resources */,
+				6120CE8F24C31A4000440884 /* Close Thunder with Rain.mp3 in Resources */,
 				617DC41E24A855EF00F40A08 /* Preview Assets.xcassets in Resources */,
+				6120CE8D24C319AA00440884 /* Rainy Mood.mp3 in Resources */,
+				6120CE9524C31C5100440884 /* Forest Sounds.mp3 in Resources */,
 				617DC41B24A855EF00F40A08 /* Assets.xcassets in Resources */,
+				6120CEA524C3210200440884 /* Lonely Mother of all.mp3 in Resources */,
+				6120CE9124C31C0200440884 /* Soothing Nighttime Ambience.mp3 in Resources */,
+				6120CE9D24C31DDA00440884 /* Waves crashing.mp3 in Resources */,
+				6120CEA724C3213100440884 /* Wind Blowing.mp3 in Resources */,
+				6120CE9724C31C7900440884 /* Spring Forest.mp3 in Resources */,
+				6120CE8B24C3195300440884 /* Relaxing Rain Noise.mp3 in Resources */,
+				6120CEAB24C322DB00440884 /* Windy Beach.mp3 in Resources */,
+				6120CEA124C320AE00440884 /* Fire.mp3 in Resources */,
+				6120CE9324C31C2200440884 /* Melody of Birds.mp3 in Resources */,
+				6120CEAD24C3266700440884 /* Tree Frog Sound.mp3 in Resources */,
+				6120CE9F24C31DFD00440884 /* Mountain river.mp3 in Resources */,
+				6120CE8924C30CE500440884 /* White noise.mp3 in Resources */,
+				6120CEA324C320DB00440884 /* Silence of Stones.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +433,7 @@
 				6177621124B99939002BA26B /* PlaceholderTextMenuItem.swift in Sources */,
 				6177622524BAFB3F002BA26B /* PlayerViewModel.swift in Sources */,
 				6177621724B9A067002BA26B /* CategoryMenuItemViewModelFactory.swift in Sources */,
+				6120CEB324C32D7400440884 /* NoisePlayer.swift in Sources */,
 				6107D7F324A8CB0200341809 /* CategoryCardView.swift in Sources */,
 				61DBABFC24B1F033001ECA7F /* MusicTracksTableViewModel.swift in Sources */,
 				61DBAC0224B2271A001ECA7F /* MainScreenView.swift in Sources */,

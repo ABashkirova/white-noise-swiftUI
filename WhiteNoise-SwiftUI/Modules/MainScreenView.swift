@@ -46,6 +46,7 @@ struct MainScreenView_Previews: PreviewProvider {
             MainScreenView(
                 viewModel: MainScreenViewModel(
                     categoryRepository: CategoryRepositoryImpl(),
+                    player: NoisePlayer(),
                     categoryMenuItemViewModelFactory: CategoryMenuFactory(),
                     musicTrackViewModelFactory: MusicTracksFactory()
                 )
@@ -53,6 +54,7 @@ struct MainScreenView_Previews: PreviewProvider {
             MainScreenView(
                 viewModel: MainScreenViewModel(
                     categoryRepository: CategoryRepositoryEmptyImpl(),
+                    player: NoisePlayer(),
                     categoryMenuItemViewModelFactory: CategoryMenuFactory(),
                     musicTrackViewModelFactory: MusicTracksFactory()
                 )

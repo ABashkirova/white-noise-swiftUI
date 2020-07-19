@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 class MainScreenViewModel: ObservableObject {
+    private let player: NoisePlayer
     var menuViewModel: CategoryMenuViewModel
     var playerViewModel: PlayerViewModel
     var cardViewModel: CategoryCardViewModel
@@ -18,9 +19,11 @@ class MainScreenViewModel: ObservableObject {
     
     init(
         categoryRepository: CategoryRepository,
+        player: NoisePlayer,
         categoryMenuItemViewModelFactory: CategoryMenuItemViewModelFactory,
         musicTrackViewModelFactory: MusicTrackViewModelFactory
     ) {
+        self.player = player
         let categories = categoryRepository.getCategories()
         let firstCategory = categories.first
         
