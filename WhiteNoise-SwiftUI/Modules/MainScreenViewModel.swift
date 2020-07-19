@@ -53,10 +53,21 @@ class MainScreenViewModel: ObservableObject {
 extension MainScreenViewModel: PlayerDelegate {
     func stop() {
         musicTracksTableViewModel.stopTrack()
+        player.stop()
     }
     
     func play() {
-        musicTracksTableViewModel.playTrack()
+        if let currentAudio = player.currentAudio {
+            musicTracksTableViewModel.playTrack(currentAudio)
+        } else {
+            // Установим в плеер первую мелодию открытой категории
+            guard
+                let audio = musicTracksTableViewModel.setIsPlayingForFirstTrack()
+            else { return }
+            
+            player.setAudio(audio)
+        }
+        player.play()
     }
 }
 
