@@ -24,22 +24,12 @@ struct PlayerView: View {
                 viewModel.isPlayed ? Image("Pause") : Image("Play")
             }
             Slider(value: $volume, in: 0...10, step: 0.1)
-            Button(action: {
-                self.shaffleTapped()
-            }) {
-                Image("Shuffle")
-                    .renderingMode(.original)
-            }
         }
         .foregroundColor(.clear)
     }
     
     func playTapped() {
         viewModel.playChange()
-    }
-    
-    func shaffleTapped() {
-        print("Shaffle tapped")
     }
 }
 
